@@ -16,7 +16,7 @@ attachments :
 
 *** =pre_exercise_code
 ```{r}
-set.seed(42)
+custom_seed(123)
 ```
 
 *** =sample_code
