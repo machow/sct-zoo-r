@@ -5,6 +5,36 @@ attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:96d069d603
+## test_expression_result and randomness
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+set.seed(42)
+```
+
+*** =sample_code
+```{r}
+library(MASS)
+M <- matrix(rnorm(300), nrow=100)
+```
+
+*** =solution
+```{r}
+library(MASS)
+M <- matrix(rnorm(300), nrow=100)
+```
+
+*** =sct
+```{r}
+test_expression_result("cov.rob(M)$cov")
+```
 --- type:NormalExercise lang:r xp:100 skills:1 key:6f2fb6af72
 ## Issue 71: test_function
 
